@@ -21,16 +21,16 @@ vmware:
         - gateway: 10.95.6.1
           netmask: 255.255.255.0
           network: 10.95.6.0
-          vmware_name: PROD_GR (vlan767)
+          vmware_name: PRD
     - backend1:
         - netmask: 255.255.255.0
         - network: 10.95.7.0
-        - vmware_name: CIC_Int_GR (vlan430)
-  source_template: rhel8_template_development_v3
-    cluster: CLU_UA_MER
-    datacenter: DC_UA_MER
-    datastore_filter: UA_MER_PROD
-    vm_folder: Linux/development
+        - vmware_name: BE
+  source_template: rhel8
+    cluster: CL
+    datacenter: DC
+    datastore_filter: DS
+    vm_folder: Linux
 ```
 ### VirtualBox:
 
