@@ -1,0 +1,11 @@
+---
+- hosts: "{{ instances }}"
+  gather_facts: false
+
+  # Run the infrastructure roles to configure the VM's and register them to Satellite
+  roles:
+    - role: role_vault
+    - { role: role_infrastructure_vmware, when: vmware is defined }
+    - { role: role_infrastructure_vbox, when: vbox is defined }
+    - { role: role_infrastructure_lvm, when: lvm is defined }
+    - role: role_infrastructure_satellite

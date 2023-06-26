@@ -1,0 +1,12 @@
+---
+# This file is required for the requirements.yaml mechanism to work
+galaxy_info:
+  name: infrastructure
+  namespace: wilcofolkers
+  description: This installs basic VM infrastructure, see README.md
+  author: Wilco Folkers
+  license: BSD
+  min_ansible_version: '2.9'
+  platforms:
+    - name: EL
+      versions: [all]

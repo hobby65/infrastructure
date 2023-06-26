@@ -1,0 +1,25 @@
+---
+- src: git+ssh://git@gitserver.localdomain/ivory_tower/role_infrastructure_vbox.git
+  name: role_infrastructure_vbox
+  version: "master"
+
+- src: git+ssh://git@gitserver.localdomain/ivory_tower/role_infrastructure_vmware.git
+  name: role_infrastructure_vmware
+  version: "master"
+
+- src: git+ssh://git@gitserver.localdomain/ivory_tower/role_infrastructure_lvm.git
+  name: role_infrastructure_lvm
+  version: "master"
+
+- src: git+ssh://git@gitserver.localdomain/ivory_tower/role_infrastructure_satellite.git
+  name: role_infrastructure_satellite
+  version: "master"
+
+# - src: git+ssh://git@gitserver.localdomain/ivory_tower/role_infrastructure_cmdb.git
+#   name: role_infrastructure_cmdb
+#   version: "master"
+#
+- src: git+ssh://git@gitserver.localdomain/ivory_tower/role_vault.git
+  name: role_vault
+  version: "master"
+
